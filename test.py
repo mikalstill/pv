@@ -7,7 +7,7 @@ import sys
 pv.debug()
 pv.debug_color()
 
-port = serial.Serial('/dev/tty.usbserial')
+port = serial.Serial('/dev/ttyUSB0', timeout=5)
 #port.open()
 
 from pv import cms
